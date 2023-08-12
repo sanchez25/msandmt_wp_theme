@@ -1,0 +1,702 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Poppins";
+  src: url('http://msandmt.local/wp-content/themes/msandmt/fonts/Poppins-Regular.ttf');
+  font-display: swap;
+}
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Poppins";
+  src: url('http://msandmt.local/wp-content/themes/msandmt/fonts/Poppins-Medium.ttf');
+  font-display: swap;
+}
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Poppins";
+  src: url('http://msandmt.local/wp-content/themes/msandmt/fonts/Poppins-SemiBold.ttf');
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "Poppins";
+  color: #fff;
+  background: #1F1D2B;
+}
+button, 
+button:active, 
+button:focus {
+  outline: none;
+}
+input,
+input:active,
+input:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  transition: .3s;
+}
+a:hover {
+  color: #fff;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+h1 {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 82px;
+  letter-spacing: -2px;
+  color: #FFFFFF;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Header */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 15px 0;
+}
+
+.contact-btn {
+  width: 160px;
+  height: 45px;
+  border: 1px solid #D7D7D7;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #BCBCBC;
+  letter-spacing: 1.5px;
+  background-color: unset;
+  font-family: "Poppins";
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background: linear-gradient(169.44deg, rgba(58, 129, 191, 0.08) 1.85%, rgba(65, 48, 90, 0.08) 98.72%);
+  backdrop-filter: blur(1099.09px);
+}
+
+/* Main banner */
+
+.main-content {
+  position: relative;
+  margin: 230px 0 270px 0;
+  padding: 0 15px;
+}
+
+.main-content .container {
+  position: relative;
+}
+
+.main-text {
+  width: 650px;
+}
+
+.text-top {
+  color: #E2E2E2;
+  letter-spacing: 0.5px;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.btn-content {
+  width: 353px;
+  height: 78px;
+  background: linear-gradient(103.91deg, #9B51E0 21.01%, rgba(48, 129, 237, 0.8) 100%);
+  border-radius: 16px;
+  border: none;
+  color: #FFFFFF;
+  letter-spacing: -1px;
+  font-weight: 600;
+  font-size: 24px;
+  font-family: 'Poppins';
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn-content:hover {
+  background: linear-gradient(103.91deg, rgba(48, 129, 237, 0.8) 21.01%, #9B51E0 100%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 284px;
+  height: 350px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 35px;
+  background-image: url(http://msandmt.local/wp-content/uploads/2022/04/rectangle.png);
+  transition: .3s;
+}
+
+.card.fb {
+  top: -120px;
+  right: 220px;
+  z-index: 1;
+}
+
+.card.fb:hover {
+  z-index: 3;
+  transform: scale(1.1);
+}
+
+.card.google {
+  z-index: 2;
+  right: 50px;
+  top: 120px;
+}
+
+.card.google:hover {
+  transform: scale(1.1);
+}
+
+.card span {
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.card img {
+  display: block;
+  height: 91px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.ellipse {
+  position: absolute;
+  width: 123px;
+  height: 123px;
+  filter: blur(150px);
+}
+
+.card.fb .ellipse {
+  background: #FB37FF;
+  top: -50px;
+  left: -45px;
+}
+
+.card.google .ellipse {
+  background: #18B2DE;
+  bottom: -50px;
+  right: -45px;
+}
+
+/* About Us */
+
+.about-us {
+  margin-bottom: 160px;
+  padding: 0 15px;
+}
+
+.about-content {
+  border-radius: 35px;
+  background-image: url(http://msandmt.local/wp-content/uploads/2022/04/what-we-doing.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 230px 80px 230px;
+  height: 407px;
+}
+
+.about-content p {
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #E2E2E2;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0;
+}
+
+/* Traffic sources */
+
+.traffic-block {
+  margin-bottom: 160px;
+  padding: 0 15px;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.columns::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(93.51deg, #9B51E0 2.84%, #3081ED 99.18%);
+  filter: blur(200px);
+  top: 42%;
+  width: 100%;
+  height: 53px;
+}
+
+.column-item {
+  width: 400px;
+  margin: 40px 100px;
+  display: flex;
+  align-items: center;
+}
+
+.column-img {
+  width: 70px;
+  height: 64px;
+  background-image: url(http://msandmt.local/wp-content/uploads/2022/04/rectangle-min.png);
+  background-repeat: no-repeat;
+  margin-right: 30px;
+}
+
+.column-right {
+  width: 300px;
+}
+
+.column-title {
+  color: #E2E2E2;
+  letter-spacing: 0.5px;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.column-right p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin: 0;
+}
+
+/* Partners */
+
+.partners-block {
+  margin-bottom: 160px;
+  padding: 0 15px;
+}
+
+.columns.partners::before {
+  display: none;
+}
+
+.img-item {
+  margin: 0 20px;
+}
+
+.img-item img {
+  width: 100%;
+  display: block;
+  height: 70px;
+}
+
+/* Connect button */
+
+.btn-block {
+  margin-bottom: 160px;
+  padding: 0 15px;
+}
+
+.connect-block {
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  margin-bottom: 90px;
+  padding: 0 15px;
+}
+
+.footer-top {
+  background-image: url(http://msandmt.local/wp-content/uploads/2022/04/rect-footer.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  height: 97px;
+}
+
+.footer-top span {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  color: #fff;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright span {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  width: 380px;
+  margin: 0 auto;
+}
+
+.over-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: 1000;
+}
+
+.modal {
+  display: none;
+}
+
+.modal-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  overflow: hidden;
+  padding: 15px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  backdrop-filter: blur(1px);
+  background-color: rgba(9, 15, 30, 0.3);
+}
+
+.modal-wrapper-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-window {
+  z-index: 999;
+}
+
+.modal-window-content {
+  border-radius: 35px;
+  padding: 30px 60px;
+  max-width: 100%;
+  outline: none;
+  text-align: center;
+  transition: all .25s;
+  background-image: url(http://msandmt.local/wp-content/uploads/2022/04/modal-rect.png);
+  background-repeat: no-repeat;
+  width: 529px;
+  height: 587px;
+}
+
+.modal-window-head {
+  position: relative;
+}
+
+.close-modal {
+  width: 22px;
+  height: 22px;
+  background-image: url(http://msandmt.local/wp-content/uploads/2022/04/close.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: absolute;
+  top: -5px;
+  right: -28px;
+}
+
+.modal-window-title {
+  text-align: center;
+  color: #fff;
+  letter-spacing: -1px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 72px;
+}
+
+.form-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-item__input {
+  border-radius: 10px;
+  border: 1px solid #60597E;
+  background-color: unset;
+  height: 45px;
+  width: 100%;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.form-item_text {
+  color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #60597E;
+  background-color: unset;
+  resize: none;
+  height: 150px;
+}
+
+.form-button {
+  width: 240px;
+  height: 57px;
+  color: #fff;
+  border-radius: 16px;
+  border: 1px solid #60597E;
+  background-color: unset;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1279px) {
+  .container {
+    max-width: 980px;
+  }
+  .about-content {
+    padding: 50px 80px 80px 80px;
+  }
+  .column-item {
+    margin: 40px;
+  }
+  .card.fb {
+    right: 180px;
+  }
+  .card.google {
+    right: 10px;
+  }
+  .main-text {
+    width: 500px;
+  }
+  .text-top {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 740px;
+  }
+  .main-text {
+    width: 100%;
+    text-align: center
+  }
+  .card.fb {
+    right: auto;
+    top: auto;
+    position: relative;
+  }
+  .card.google {
+    right: auto;
+    top: auto;
+    position: relative;
+  }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  .main-content {
+    margin: 160px 0 160px 0;
+  }
+  .about-content {
+    height: auto;
+    padding: 50px;
+  }
+  h1 {
+    margin-bottom: 25px;
+  }
+  h2 {
+    margin-bottom: 25px;
+  }
+  .column-item {
+    margin: 40px 35px;
+    width: 300px;
+  }
+  .column-img {
+    margin-right: 20px;
+  }
+  .column-right {
+    width: 200px;
+  }
+  .img-item img {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  .card.google .ellipse {
+    display: none;
+  }
+  .card.fb .ellipse {
+    display: none;
+  }
+  .column-item {
+    margin: 40px 10px;
+  }
+  .about-us {
+    margin-bottom: 100px;
+  }
+  .traffic-block {
+    margin-bottom: 100px;
+  }
+  .partners-block {
+    margin-bottom: 100px;
+  }
+  .btn-block {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card.fb {
+    margin-bottom: 40px;
+  }
+  .about-content p {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .footer-top span {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-content {
+    background-image: unset;
+    background: linear-gradient(169.44deg, rgba(58, 129, 191, 0.08) 1.85%, rgba(65, 48, 90, 0.08) 98.72%);
+    backdrop-filter: blur(1110px);
+  }
+  .footer-top {
+    background-image: unset;
+    background: linear-gradient(169.44deg, rgba(58, 129, 191, 0.08) 1.85%, rgba(65, 48, 90, 0.08) 98.72%);
+    backdrop-filter: blur(1110px);
+    border-radius: 35px;
+  }
+  .footer-top span {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .about-content {
+    padding: 50px 20px;
+  }
+  .footer-copyright span {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .about-content p {
+    font-size: 14px;
+  }
+  .main-content {
+    margin: 100px 0 100px 0;
+  }
+  .about-us {
+    margin-bottom: 50px;
+  }
+  .traffic-block {
+    margin-bottom: 50px;
+  }
+  .partners-block {
+    margin-bottom: 50px;
+  }
+  .btn-block {
+    margin-bottom: 50px;
+  }
+  footer {
+    margin-bottom: 50px;
+  }
+  .btn-content {
+    width: 280px;
+  }
+  .contact-btn {
+    width: 140px;
+  }
+  h1 {
+    line-height: 40px;
+  }
+} 
+
